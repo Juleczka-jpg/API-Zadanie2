@@ -17,7 +17,13 @@ namespace MauiApp7.Services
         {
             _client = client;
         }
-
+/*******************************************************
+nazwa funkcji:      GetRateAsync
+opis funkcji:       Pobiera aktualny kurs średni wybranej waluty z API NBP.
+parametry:          code - kod waluty (np. "USD", "EUR") jako string.
+zwracany typ i opis: Task<double> - wartość kursu średniego lub 0 w razie błędu.
+autor:             
+*******************************************************/
         public async Task<double> GetRateAsync(string code)
         {
             try
